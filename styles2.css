@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.inputt {
+  border: 3px solid red;
+  display: inline-block;
+  width: 100%;
+}
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 calc(50% - 0.5rem);
+}
+
+#departure,
+#arrival {
+  width: 8rem;
+}
+
+button {
+  width: 100%;
+  border: 3px solid red;
+}
+
+article {
+  border: 3px solid green;
+}
+
+.container {
+  border: 3px solid blue;
+}
+
+.form {
+  width: 75%;
+}
