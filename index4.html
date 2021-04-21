@@ -10,42 +10,47 @@
   <body>
     <!-- Search section -->
     <section class="search-section">
-      <h1>Explore the world with WIKI trip</h1>
-      <div class="search-container">
-        <!-- destination search input-->
-        <div class="destination-container">
-          <label for="start">Where to:</label>
-          <input
-            type="text"
-            id="destination"
-            name="trip"
-            placeholder="city, country"
-          />
-        </div>
+      <div class="search-section-container">
+        <h1>Explore the world with WIKI trip</h1>
+        <div class="search-container">
+          <!-- destination & Calendar input container -->
+          <div class="destination-calendar-container">
+            <!-- destination search input-->
+            <div class="destination-container">
+              <label for="start">Where to:</label>
+              <input
+                type="text"
+                id="destination"
+                name="trip"
+                placeholder="city, country"
+              />
+            </div>
 
-        <!-- calendar-btn-container -->
-        <div class="calender-btn-container">
-          <!-- calendar input -->
-          <div class="calendar-container">
-            <!-- departure date input -->
-            <article class="departure">
-              <label for="start">Departure Date:</label>
-              <input type="date" id="start" name="trip-start" />
-            </article>
+            <!-- calendar input -->
+            <div class="calendar-container">
+              <!-- departure date input -->
+              <article class="departure">
+                <label for="start">Departure Date:</label>
+                <input type="date" id="start" name="trip-start" />
+              </article>
 
-            <!-- arrival date input -->
-            <article class="arrival">
-              <label for="start">Arrival Date:</label>
-              <input type="date" id="start" name="trip-start" />
-            </article>
+              <!-- arrival date input -->
+              <article class="arrival">
+                <label for="start">Arrival Date:</label>
+                <input type="date" id="start" name="trip-start" />
+              </article>
+            </div>
           </div>
 
           <!-- search button -->
-          <a href="#" class="search-btn"
-            ><input type="button" value="Search"
-          /></a>
+          <div class="search-button">
+            <a href="#" class="search-btn"
+              ><input type="button" value="Search"
+            /></a>
+          </div>
         </div>
       </div>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>
