@@ -1,3 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 5px solid black;
+}
+
+/* 
+============
+Search Section
+============
+*/
+.search-section {
+  border: 5px solid yellowgreen;
+  margin: 0 auto;
+  background: darkturquoise;
+  color: #fff;
+  font-weight: bold;
+}
+
+.search-section h1 {
+  border: 3px solid red;
+  text-transform: uppercase;
+  max-width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-container {
+  border: 3px solid blue;
+  width: 80vw;
+  margin: 0 auto;
+}
+
 label {
   border: 3px solid red;
   display: block;
@@ -6,6 +43,7 @@ label {
 
 input {
   border: 3px solid blue;
+  width: 100%;
 }
 
 input,
@@ -13,7 +51,7 @@ label {
   margin: 0.4rem 0;
 }
 
-.search-container {
+.destination-container {
   border: 3px solid brown;
 }
 .calendar-container {
@@ -39,4 +77,7 @@ label {
 .search-btn {
   border: 3px solid red;
   display: block;
+}
+
+@media screen and (min-width: 798px) {
 }

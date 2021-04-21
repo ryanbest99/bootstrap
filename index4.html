@@ -8,24 +8,41 @@
     <link rel="stylesheet" href="styles4.css" />
   </head>
   <body>
+    <!-- Search section -->
     <section class="search-section">
+      <h1>Explore the world with WIKI trip</h1>
       <div class="search-container">
-        <label for="start">Where to:</label>
-        <input type="text" id="destination" name="trip" />
-      </div>
+        <!-- destination search input-->
+        <div class="destination-container">
+          <label for="start">Where to:</label>
+          <input
+            type="text"
+            id="destination"
+            name="trip"
+            placeholder="city, country"
+          />
+        </div>
 
-      <div class="calendar-container">
-        <article class="departure">
-          <label for="start">Departure Date:</label>
-          <input type="date" id="start" name="trip-start" />
-        </article>
+        <!-- calendar input -->
+        <div class="calendar-container">
+          <!-- departure date input -->
+          <article class="departure">
+            <label for="start">Departure Date:</label>
+            <input type="date" id="start" name="trip-start" />
+          </article>
 
-        <article class="arrival">
-          <label for="start">Arrival Date:</label>
-          <input type="date" id="start" name="trip-start" />
-        </article>
+          <!-- arrival date input -->
+          <article class="arrival">
+            <label for="start">Arrival Date:</label>
+            <input type="date" id="start" name="trip-start" />
+          </article>
+        </div>
+
+        <!-- search button -->
+        <a href="#" class="search-btn"
+          ><input type="button" value="Search"
+        /></a>
       </div>
-      <!-- <a href="#" class="search-btn"><input type="button" value="Search" /></a> -->
     </section>
   </body>
 </html>
