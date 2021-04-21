@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>input date</title>
+    <!-- stylesheet -->
     <link rel="stylesheet" href="styles4.css" />
   </head>
   <body>
@@ -20,7 +21,8 @@
               <label for="start">Where to:</label>
               <input
                 type="text"
-                id="destination"
+                id="searchInput"
+                class="controls"
                 name="trip"
                 placeholder="city, country"
               />
@@ -51,6 +53,18 @@
         </div>
       </div>
     </section>
+
+    <!-- Google map -->
+    <div id="map"></div>
+
+    <!-- External javascript -->
     <script src="app.js"></script>
+
+    <!-- google map API -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBSsHNVO1lDvFtxkvQ_JorTQTL_nD7vaE4&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
