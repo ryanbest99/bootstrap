@@ -1,0 +1,42 @@
+label {
+  border: 3px solid red;
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+input {
+  border: 3px solid blue;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+.search-container {
+  border: 3px solid brown;
+}
+.calendar-container {
+  border: 3px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.departure,
+.arrival {
+  flex: 1 0 calc(50% - 1rem);
+}
+
+.departure {
+  border: 3px dashed pink;
+}
+
+.arrival {
+  border: 3px dashed purple;
+}
+
+.search-btn {
+  border: 3px solid red;
+  display: block;
+}
