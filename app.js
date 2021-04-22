@@ -5,7 +5,26 @@ console.log(randomNumber);
 
 //Select image
 const searchSection = document.querySelector(".search-section");
-searchSection.style.background = `url('./images/summer/${randomNumber}.jpeg') center/cover no-repeat`;
+
+//Background Media Queries
+const mediaQuery = window.matchMedia("(min-width: 789px)");
+
+function handleTabletChange(e) {
+  // Check if the media query is true
+  if (e.matches) {
+    // Then log the following message to the console
+    console.log("Media Query Matched!");
+    searchSection.style.background = `url('./images/summer/${randomNumber}.jpeg') center/cover no-repeat`;
+  } else {
+    searchSection.style.background = `darkturquoise`;
+  }
+}
+
+// Register event listener
+mediaQuery.addListener(handleTabletChange);
+
+// Initial check
+handleTabletChange(mediaQuery);
 
 /*
 =============
