@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input date</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Search section -->
+    <section class="search-section">
+      <div class="search-section-container">
+        <h1>Explore the world with WIKI trip</h1>
+        <div class="search-container">
+          <!-- destination & Calendar input container -->
+          <div class="destination-calendar-container">
+            <!-- destination search input-->
+            <div class="destination-container">
+              <label for="start">Where to:</label>
+              <input
+                type="text"
+                id="searchInput"
+                class="controls"
+                name="trip"
+                placeholder="city, country"
+              />
+            </div>
+
+            <!-- calendar input -->
+            <div class="calendar-container">
+              <!-- departure date input -->
+              <article class="departure">
+                <label for="start">Depart </label>
+                <input type="date" id="start" name="trip-start" />
+              </article>
+
+              <!-- arrival date input -->
+              <article class="arrival">
+                <label for="start">Return</label>
+                <input type="date" id="start" name="trip-start" />
+              </article>
+            </div>
+          </div>
+
+          <!-- search button -->
+          <div class="search-button">
+            <a href="#" class="search-btn"
+              ><input type="button" value="Search"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google map -->
+    <div id="map"></div>
+
+    <!-- External javascript -->
+    <script src="app.js"></script>
+
+    <!-- google map API -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBSsHNVO1lDvFtxkvQ_JorTQTL_nD7vaE4&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
