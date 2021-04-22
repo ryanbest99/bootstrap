@@ -60,9 +60,6 @@ label {
   margin: 0.1rem 0;
 }
 
-.destination-container {
-  /* border: 3px solid brown; */
-}
 .calendar-container {
   /* border: 3px solid green; */
   display: flex;
@@ -73,14 +70,6 @@ label {
 .departure,
 .arrival {
   flex: 1 0 calc(50% - 1rem);
-}
-
-.departure {
-  /* border: 3px dashed pink; */
-}
-
-.arrival {
-  /* border: 3px dashed purple; */
 }
 
 .search-button {
@@ -123,6 +112,12 @@ label {
     align-self: flex-end;
   }
 }
+
+/*
+============
+Google Map Styling
+============
+*/
 
 #map {
   border: 3px solid red;

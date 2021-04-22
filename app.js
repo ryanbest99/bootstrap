@@ -12,7 +12,12 @@ const searchSection = document.querySelector(".search-section");
 searchSection.style.background =
   "url('./images/summer/1.jpeg') center/cover no-repeat";
 
-// google map
+/*
+=============
+Gooogle Map Implement
+=============
+*/
+
 function initMap() {
   // The location of NYC
   var map = new google.maps.Map(document.getElementById("map"), {
